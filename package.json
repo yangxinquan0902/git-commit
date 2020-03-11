@@ -20,14 +20,17 @@
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
-    "husky": "^4.2.3"
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8"
   },
   "husky": {
     "hooks": {
-        "pre-commit": "echo 'pre-commit'",
-        "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-        "pre-push": "echo 'pre-push'"
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-push": "echo 'pre-push'"
     }
-	}
-
+  },
+  "lint-staged": {
+    "*.{js,vue}": "echo 'pre-commit'"
+  },
 }
