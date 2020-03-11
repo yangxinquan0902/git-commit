@@ -1,0 +1,33 @@
+{
+  "name": "git-commit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yangxinquan0902/git-commit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yangxinquan0902/git-commit/issues"
+  },
+  "homepage": "https://github.com/yangxinquan0902/git-commit#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "husky": "^4.2.3"
+  },
+  "husky": {
+    "hooks": {
+        "pre-commit": "echo 'pre-commit'",
+        "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+        "pre-push": "echo 'pre-push'"
+    }
+	}
+
+}
