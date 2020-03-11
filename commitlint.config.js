@@ -34,7 +34,7 @@ typeEnum = {
     'type-enum': [2, 'always', types]
   },
   value: () => types
-}
+};
 
 module.exports = {
 	extends: [
