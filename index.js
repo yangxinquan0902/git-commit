@@ -1,4 +1,4 @@
-console.log(88888)
+console.log(888)
 /*
 	常见的分类有下面几种：
 	
