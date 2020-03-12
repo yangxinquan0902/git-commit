@@ -16,11 +16,11 @@
     "hooks": {
       "pre-commit": "lint-staged",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-push": "echo pre-push"
+      "pre-push": "echo 'pre-push'"
     }
   },
   "lint-staged": {
-    "*.{js,vue}": "npm run test"
+    "*.{js,vue}": "echo 'pre-commit'"
   },
   "engines": {
     "node": ">=8"
