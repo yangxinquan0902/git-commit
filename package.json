@@ -2,21 +2,12 @@
   "name": "git-commit",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yangxinquan0902/git-commit.git"
-  },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/yangxinquan0902/git-commit/issues"
-  },
-  "homepage": "https://github.com/yangxinquan0902/git-commit#readme",
+  "private": true,
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
@@ -32,5 +23,8 @@
   },
   "lint-staged": {
     "*.{js,vue}": "echo 'pre-commit'"
+  },
+  "engines": {
+    "node": ">=8"
   }
 }
