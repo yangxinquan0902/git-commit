@@ -7,7 +7,7 @@
 		docs：文档提交（documents）
 		feat：新增功能（feature）
 		fix：修复 bug
-		pref：性能、体验相关的提交
+		perf：性能、体验相关的提交
 		refactor：代码重构
 		revert：回滚某个更早的提交
 		style：不影响程序逻辑的代码修改、主要是样式方面的优化、修改
@@ -21,7 +21,7 @@ const types = [
   'docs', 
   'feat', 
   'fix', 
-  'pref', 
+  'perf', 
   'refactor', 
   'revert', 
   'style', 
@@ -35,12 +35,12 @@ module.exports = {
 	],
 	rules: {
 		'type-case': [0],
-    'type-empty': [0],
-    'scope-empty': [0],
-    'scope-case': [0],
-    'subject-full-stop': [0, 'never'],
-    'subject-case': [0, 'never'],
-    'header-max-length': [0, 'always', 72],
-    'type-enum': [2, 'always', types],
+		'type-empty': [0],
+		'scope-empty': [0],
+		'scope-case': [0],
+		'subject-full-stop': [0, 'never'],
+		'subject-case': [0, 'never'],
+		'header-max-length': [0, 'always', 72],
+		'type-enum': [2, 'always', types],
 	}
 };
